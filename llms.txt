@@ -1,0 +1,9 @@
+# EchoMoral (by VeriTakt Collective)
+> Client-side EU AI Act, NIS2 & DORA readiness triage tool (100 % local in browser).
+
+- Triage App: https://cheresonanz-design.github.io/echomoral-compliance/
+- EU AI Act Check: https://cheresonanz-design.github.io/echomoral-compliance/eu-ai-act-check/
+- NIS2 Checklist: https://cheresonanz-design.github.io/echomoral-compliance/nis2-checkliste/
+- DORA Readiness: https://cheresonanz-design.github.io/echomoral-compliance/dora-readiness/
+- Governance Pack (49 EUR) & Rollout (3.500 EUR): https://cheresonanz-design.github.io/echomoral-compliance/pro/
+- Legal Imprint: https://cheresonanz-design.github.io/echomoral-compliance/legal/

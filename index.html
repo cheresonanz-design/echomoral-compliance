@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EchoMoral — EU AI Act, NIS2 &amp; DORA Compliance-OS (100 % lokal)</title>
+  <meta name="description" content="Deterministische EU AI Act, NIS2 &amp; DORA Readiness-Triage direkt im Browser ohne Daten-Upload." />
+  <link rel="canonical" href="https://cheresonanz-design.github.io/echomoral-compliance/" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "EchoMoral EU AI Act, NIS2 & DORA Compliance Triage", "applicationCategory": "BusinessApplication", "operatingSystem": "Web Browser (Client-Side)", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "url": "https://cheresonanz-design.github.io/echomoral-compliance/"}</script>
+</head>
+<body>
+  <header class="topbar no-print">
+    <div class="container topbar-inner">
+      <a class="brand-mark" href="index.html">
+        <span>EchoMoral</span>
+        <span class="brand-badge">EU AI ACT · NIS2 · DORA</span>
+      </a>
+      <nav class="nav-links" aria-label="Hauptnavigation">
+        <a href="index.html" class="active">Readiness Triage</a>
+<a href="eu-ai-act-check/" class="">EU AI Act</a>
+<a href="nis2-checkliste/" class="">NIS2</a>
+<a href="dora-readiness/" class="">DORA</a>
+<a href="pro/" class="">Governance Pack & Rollout</a>
+<a href="legal/" class="">Impressum</a>
+        <a href="pro/" class="nav-cta">49 EUR Pack</a>
+      </nav>
+    </div>
+  </header>
+  
+  <section class="hero">
+    <div class="container">
+      <div class="privacy-pill">100 % Lokal im Browser · Keine Datenübertragung an Dritte · Ersteinschätzung</div>
+      <h1>EU AI Act, NIS2 &amp; DORA Readiness Triage</h1>
+      <p>Ermitteln Sie in 60 Sekunden Risikostufe (Art. 4/5/6/50 EU AI Act), NIS2-Betroffenheit, DORA-Pflichten und konkrete Sofortmaßnahmen.</p>
+    </div>
+  </section>
+  <main class="container">
+    <div class="card no-print">
+      <div class="btn-row" style="margin-top:0;margin-bottom:14px;">
+        <button type="button" class="btn" id="sampleHrBtn">Beispiel: HR-Recruiting (Hochrisiko + NIS2)</button>
+        <button type="button" class="btn" id="sampleBotBtn">Beispiel: KI-Support-Chatbot (Art. 50)</button>
+        <button type="button" class="btn" id="sampleDoraBtn">Beispiel: Finanz-IKT / DORA-Anbieter</button>
+      </div>
+      <div class="form-grid">
+        <div>
+          <label for="orgName">Unternehmen / Organisation</label>
+          <input type="text" id="orgName" value="Muster Mittelstand GmbH" />
+        </div>
+        <div>
+          <label for="aiDomain">Primärer KI-Einsatzbereich (EU AI Act)</label>
+          <select id="aiDomain">
+            <option value="none">Kein produktives KI-System</option>
+            <option value="hr_recruiting">HR, Bewerber-Screening &amp; Personal (Anhang III Hochrisiko)</option>
+            <option value="credit_insurance">Kredit-Scoring / Versicherungs-Tarifierung (Hochrisiko)</option>
+            <option value="biometric_id">Biometrische Identifizierung (Hochrisiko)</option>
+            <option value="critical_infra">Kritische Infrastruktur / Energie / Verkehr (Hochrisiko)</option>
+            <option value="education_vocational">Bildung / Prüfungsbewertung (Hochrisiko)</option>
+            <option value="justice_law">Recht / Justiz-Unterstützung (Hochrisiko)</option>
+            <option value="chatbot_assistant">Kunden-Chatbot / KI-Assistent (Art. 50 Transparenz)</option>
+            <option value="synthetic_media">Synthetische Medien / Audio / Video (Art. 50)</option>
+            <option value="standard_ops">Interne Büro-/Workflow-Automatisierung (Minimal Risk)</option>
+            <option value="social_scoring">Social Scoring / Bewertung natürlicher Personen (Art. 5 Verbot)</option>
+            <option value="emotion_workplace_edu">Emotionserkennung am Arbeitsplatz/Schule (Art. 5 Verbot)</option>
+          </select>
+        </div>
+        <div>
+          <label for="sectorSelect">Branche / Sektor (NIS2 &amp; DORA)</label>
+          <select id="sectorSelect">
+            <option value="other">Sonstiges B2B / Beratung / Agentur</option>
+            <option value="ict_managed">ITK / Managed Services / Cloud-SaaS (NIS2 Wesentlich)</option>
+            <option value="finance_banking">Finanzwesen / Banken / regulierter Finanz-ITK (DORA + NIS2)</option>
+            <option value="health">Gesundheitswesen / Praxen / MedTech (NIS2 Wesentlich)</option>
+            <option value="energy">Energie / Versorgung (NIS2 Wesentlich)</option>
+            <option value="transport">Transport &amp; Logistik (NIS2 Wesentlich)</option>
+            <option value="digital_infra">Digitale Infrastruktur / Rechenzentren (NIS2 Wesentlich)</option>
+            <option value="manufacturing">Verarbeitendes Gewerbe / Maschinenbau (NIS2 Wichtig)</option>
+            <option value="digital_providers">Online-Marktplätze / SaaS-Plattformen (NIS2 Wichtig)</option>
+          </select>
+        </div>
+        <div>
+          <label for="employeesInput">Mitarbeitende (Kopfzahl)</label>
+          <input type="number" id="employeesInput" min="1" value="65" />
+        </div>
+        <div>
+          <label for="revenueInput">Jahresumsatz (Mio. EUR)</label>
+          <input type="number" id="revenueInput" min="0" step="0.1" value="12" />
+        </div>
+      </div>
+
+      <div class="checks-grid">
+        <label class="check-item"><input type="checkbox" id="doraCheck" /> Finanzinstitut oder krit. Finanz-IKT-Zulieferer (DORA)</label>
+        <label class="check-item"><input type="checkbox" id="ctrlLiteracy" /> Art. 4 AI-Literacy / KI-Schulungsnachweis vorhanden</label>
+        <label class="check-item"><input type="checkbox" id="ctrlTransparency" /> Art. 50 / Art. 26 KI-Transparenzhinweis aktiv</label>
+        <label class="check-item"><input type="checkbox" id="ctrlOversight" /> Human Oversight / Vier-Augen-Stopp etabliert</label>
+        <label class="check-item"><input type="checkbox" id="ctrlIncident" /> NIS2 24h/72h Incident-Meldekette dokumentiert</label>
+        <label class="check-item"><input type="checkbox" id="ctrlMfa" /> Phishing-resistente MFA &amp; getestete Offline-Backups</label>
+        <label class="check-item"><input type="checkbox" id="ctrlVendor" /> DORA/NIS2 IKT-Drittanbieter-Register gepflegt</label>
+      </div>
+
+      <div class="btn-row">
+        <button type="button" class="btn btn-primary" id="runTriageBtn">Compliance-Triage jetzt berechnen</button>
+      </div>
+    </div>
+
+    <div id="resultCard" class="card hidden">
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;">
+        <h2 id="resultHeadline" style="margin:0;">Ergebnis</h2>
+        <div class="btn-row no-print" style="margin:0;">
+          <button type="button" class="btn" id="copyMdBtn">Markdown-Protokoll kopieren</button>
+          <button type="button" class="btn" id="dlJsonBtn">JSON-Audit laden</button>
+        </div>
+      </div>
+      <div class="kpi-grid">
+        <div class="kpi-box"><div class="kpi-label">Readiness Score</div><div class="kpi-val" id="scoreKpi">-</div></div>
+        <div class="kpi-box"><div class="kpi-label">EU AI Act Stufe</div><div class="kpi-val" id="aiTierKpi">-</div></div>
+        <div class="kpi-box"><div class="kpi-label">NIS2 Einordnung</div><div class="kpi-val" id="nis2Kpi">-</div></div>
+        <div class="kpi-box"><div class="kpi-label">DORA Status</div><div class="kpi-val" id="doraKpi">-</div></div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>ID</th><th>Rahmenwerk</th><th>Status</th><th>Prüffeld &amp; Befund</th></tr></thead>
+          <tbody id="checksBody"></tbody>
+        </table>
+      </div>
+      <h3>Priorisierte Sofortmaßnahmen</h3>
+      <ul id="remediationList"></ul>
+    </div>
+
+    <div class="pricing-grid no-print">
+      <div class="offer-card highlight">
+        <div>
+          <span class="badge badge-pass">EM-GOV-01 · Digital-Pack</span>
+          <h3>EU AI Act &amp; NIS2 Governance Pack</h3>
+          <div class="offer-price">49 EUR</div>
+          <p class="muted">4-Tab Excel-Inventar (KI, NIS2, DORA IKT-Register, Fristen), Playbook PDF, Vendor-Fragebogen &amp; Offline Node.js CLI.</p>
+        </div>
+        <div class="btn-row">
+          <a href="mailto:che.resonanz@gmail.com?subject=Bestellung%20EchoMoral%20Governance%20Pack%20%2849%20EUR%29" class="btn btn-primary">49 EUR Pack bestellen</a>
+          <a href="pro/" class="btn">Details</a>
+        </div>
+      </div>
+      <div class="offer-card">
+        <div>
+          <span class="badge badge-warn">EM-B2B-ROLLOUT · Festpreis</span>
+          <h3>EchoMoral Compliance-OS Rollout</h3>
+          <div class="offer-price">3.500 EUR</div>
+          <p class="muted">Komplette Einrichtung: KI-Inventar, 24h-NIS2-Meldekette, DORA-Drittanbieter-Register &amp; Team-SOP ohne SaaS-Abo.</p>
+        </div>
+        <div class="btn-row">
+          <a href="mailto:che.resonanz@gmail.com?subject=Anfrage%20EchoMoral%20Compliance-OS%20Rollout%20%283.500%20EUR%29" class="btn btn-dark">3.500 EUR Rollout anfragen</a>
+          <a href="pro/" class="btn">Umfang</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer no-print">
+    <div class="container">
+      <p><strong>EchoMoral</strong> — Deterministische EU AI Act, NIS2 &amp; DORA Readiness-Triage direkt im Browser ohne Daten-Upload.</p>
+      <p>Che Goncalves Menendez · EchoMoral · by VeriTakt Collective (Gewerbe: ImportKlar) · Liegnitzstr. 53A, 28237 Bremen, Deutschland · Umsatzsteuerbefreit gemäß § 19 UStG (Kleinunternehmerregelung)</p>
+      <p>
+        <a href="legal/">Impressum &amp; DSGVO</a> ·
+        <a href="pro/">49 EUR Governance Pack &amp; 3.500 EUR Rollout</a> ·
+        <a href="https://cheresonanz-design.github.io/opskanon-directory/" target="_blank" rel="noopener">Gelistet auf OpsKanon</a>
+      </p>
+    </div>
+  </footer>
+  <script src="assets/compliance_engine.js"></script><script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cheresonanz-design.github.io/echomoral-compliance/sitemap.xml
